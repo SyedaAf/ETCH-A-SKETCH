@@ -1,0 +1,81 @@
+ 
+
+
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+button.button, .sizeSubmit, .clearBtn {
+ border:none;
+ background-color: transparent;
+ font-family: inherit;
+ padding: 0;
+ cursor: pointer;
+}
+button.button, .sizeSubmit, .clearBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+button.button, .sizeSubmit, .clearBtn {
+    background-color: #78c0ec;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0,0, 0, 0.18);
+    padding: 0.25em 0.75em;
+    min-width: 10ch;
+    min-height: 35px;
+    text-align: center;
+    line-height: 1.1;
+    transition: 220ms all ease-in-out;
+   
+}
+button.button:hover, .sizeSubmit:hover, .clearBtn:hover {
+    background-color: #add4ec;
+}
+button.button:focus, .sizeSubmit:focus, .clearBtn:focus {
+    outline: none;
+    box-shadow:  0 0 0 2px #98b8cc;
+}
+
+h1 {
+    color: #78c0ec;
+}
+
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+  #container {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+  }
+  
+  .grid-item {
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+
+  #container {
+    position: relative;
+    top: 30px;
+    outline: 2px solid #78c0ec;
+    font-size: 0;
+    margin: auto;
+    height: 500px;
+    width: 660px;
+    padding: 0;
+    border: none;
+}
+
+.grid {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 1px solid #78c0ec;
+    display: inline-block;
+}

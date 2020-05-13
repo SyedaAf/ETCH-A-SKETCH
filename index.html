@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title> Etch-a-Sketch</title>
+    <link rel="stylesheet" type= "text/css" href="style.css">
+    <meta name="viewport" content="width=device-width" initial-scale="1" charset="UTF-8"/> 
+</head>
+
+    <body>
+        <header>
+            <h1>Etch-a-Sketch</h1>
+        </header>
+        <main>
+             <div class= "buttons">
+                
+
+                <form id= "options" onsubmit="return false">
+                    
+                <input type= "text" id= 'sizeInput' value="Select a number (0-80)" >
+                <input type= "submit" class= "sizeSubmit" onclick= "makeCanvas()" value="New sketchboard"></input>
+                </form>
+                <br>
+                <button type = "button" value = "Greyscale" class ="button" onclick = "doGrey()">Greyscale</button>
+        
+                <button type = "button" value = "Black" class ="button" onclick = "doBlack()"> Black</button>
+                <button type="button" value= "Rainbowcolor" class ="button" onclick= "doRainbow()">Rainbow </button>
+            
+                <button type= "button" class= "clearBtn" onclick= "clearCanvas()">Clear</button>
+                </div>    
+            </div>
+
+            <div id= "container">  
+            </div>
+        </main>
+
+
+        <script src="main.js"></script>
+    </body>
+</html>
