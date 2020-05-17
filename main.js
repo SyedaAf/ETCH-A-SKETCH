@@ -1,4 +1,4 @@
-const can = document.querySelector('#can');
+const container = document.querySelector('#container');
 
 let rows = document.querySelector("gridRow");
 let cell = document.querySelector("cell");
